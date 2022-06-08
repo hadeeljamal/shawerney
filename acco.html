@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+    		initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Accordion</title>
+
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-4.3.1-dist/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/rtl/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/rtl/style-ar.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=Montagu+Slab:opsz,wght@16..144,200;16..144,300;16..144,400;16..144,500&family=Montserrat:ital,wght@0,400;0,500;1,400&family=Nunito:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+    <style>
+      .accordion {
+        margin: 15px;
+      }
+
+      .accordion .fa {
+        margin-right: 0.2rem;
+      }
+      .accordion > .card .card-header {
+        margin-bottom: 0px;
+      }
+      .card-body {
+        border-bottom: 1px solid #ccc;
+      }
+      button.btn-link {
+        color: black;
+        text-decoration: none;
+      }
+      .accordion .fa {
+        margin-left: 0.7rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- Start sec-nav -->
+    <section class="sec-nav" dir="rtl">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"><img src="img/logo/Group 2.png" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >الرئيسية <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">عن شاورني</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">سجل كخبير</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">إيجاد خبير</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">المدونة</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-outline-primary custom-btn-edit btn-edit-14"
+                href="#"
+                >دخول</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-success custom-btn-edit btn-edit-14" href="#"
+                >إنشاء حساب</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-language"></i>English
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <!-- End sec-nav -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <h3 class="text-center p-3 prof-line-2">الأسئلة الشائعة</h3>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- Start search-part-->
+    <div class="search-part">
+      <div class="container">
+        <i
+          class="fa fa-search"
+          aria-hidden="true"
+          style="
+            position: absolute;
+            left: 22%;
+            top: 35%;
+            z-index: 8000;
+            color: #0030a7;
+          "
+        ></i>
+        <input
+          type="search"
+          class="form-control search-part-input-2"
+          placeholder="ادخل كلمات البحث عن سؤالك "
+        />
+      </div>
+    </div>
+    <!-- End search-part-->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- Start accordion -->
+    <div class="accordion">
+      <div class="container">
+        <h2 class="prof-line container" style="color: black">أسئلة الخبراء</h2>
+
+        <div class="accordion" id="accordionExample">
+          <div class="card mb-3">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button
+                  type="button"
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                >
+                  <i class="fa fa-plus"></i>
+                  هل هناك رسوم سنوية للخبير؟
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseOne"
+              class="collapse"
+              aria-labelledby="headingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur, ut?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button
+                  type="button"
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                >
+                  <i class="fa fa-plus"></i>
+                  هل هناك رسوم سنوية للخبير؟
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse show"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <p>lo</p>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  type="button"
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                >
+                  <i class="fa fa-plus"></i>
+                  هل هناك رسوم سنوية للخبير؟
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <p>
+                  HTML stands for HyperText Markup Language. It is used to
+                  design web pages using markup language.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header" id="headingThree2">
+              <h2 class="mb-0">
+                <button
+                  type="button"
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseFour2"
+                >
+                  <i class="fa fa-plus"></i>
+                  هل هناك رسوم سنوية للخبير؟
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseFour2"
+              class="collapse"
+              aria-labelledby="headingFour2"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <p>
+                  HTML stands for HyperText Markup Language. It is used to
+                  design web pages using markup language.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="prof-line" style="color: black">أسئلة الخبراء</h2>
+
+          <div class="card mb-3">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  type="button"
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseFour"
+                >
+                  <i class="fa fa-plus"></i>
+                  هل هناك رسوم سنوية للخبير؟
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseFour"
+              class="collapse"
+              aria-labelledby="headingFour"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <p>
+                  HTML stands for HyperText Markup Language. It is used to
+                  design web pages using markup language.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  type="button"
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseFive"
+                >
+                  <i class="fa fa-plus"></i>
+                  هل هناك رسوم سنوية للخبير؟
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseFive"
+              class="collapse"
+              aria-labelledby="headingFive"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <p>
+                  HTML stands for HyperText Markup Language. It is used to
+                  design web pages using markup language.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-header" id="headingSix">
+              <h2 class="mb-0">
+                <button
+                  type="button"
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseSix"
+                >
+                  <i class="fa fa-plus"></i>
+                  هل هناك رسوم سنوية للخبير؟
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseSix"
+              class="collapse"
+              aria-labelledby="headingFive"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <p>
+                  HTML stands for HyperText Markup Language. It is used to
+                  design web pages using markup language.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="prof-line" style="color: black">أسئلة الخبراء</h2>
+
+          <div class="card mb-3">
+            <div class="card-header" id="heading7">
+              <h2 class="mb-0">
+                <button
+                  type="button"
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapse7"
+                >
+                  <i class="fa fa-plus"></i>
+                  هل هناك رسوم سنوية للخبير؟
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapse7"
+              class="collapse"
+              aria-labelledby="heading7"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <p>
+                  HTML stands for HyperText Markup Language. It is used to
+                  design web pages using markup language.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-header" id="heading8">
+              <h2 class="mb-0">
+                <button
+                  type="button"
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapse8"
+                >
+                  <i class="fa fa-plus"></i>
+                  هل هناك رسوم سنوية للخبير؟
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapse8"
+              class="collapse"
+              aria-labelledby="heading8"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <p>
+                  HTML stands for HyperText Markup Language. It is used to
+                  design web pages using markup language.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End accordion -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- Start footer -->
+    <section class="footer" dir="rtl">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-row align-items-center">
+              <div class="col-sm-3 my-1">
+                <p class="card-text">
+                  <img src="img/logo/Group 2.png" />
+                </p>
+              </div>
+              <div class="col-sm-9 my-1">
+                <a href=""><img src="img/footer/1.png" width="16%" /></a>
+                <a href=""><img src="img/footer/2.png" width="16%" /></a>
+                <a href=""><img src="img/footer/3.png" width="16%" /></a>
+                <a href=""><img src="img/footer/4.png" width="16%" /></a>
+                <a href=""><img src="img/footer/5.png" width="16%" /></a>
+              </div>
+            </div>
+            <p>
+              أكثر من 500 مستشار وخبير في مجالات متعــــددة مثل : التصمـــــيم ،
+              البرمجــــــة ، الامن السيبرانـي إدارة المشاريع ، الرياضيات ،
+              الفيزياء وغيرهم الكثير
+            </p>
+            <div class="form-row align-items-center">
+              <div class="col-sm-4 my-1 payment-methods">
+                <a href=""><img src="img/footer/6.png" /></a>
+              </div>
+              <div class="col-sm-4 my-1 payment-methods">
+                <a href=""> <img src="img/footer/7.png" /> </a>
+              </div>
+              <div class="col-sm-4 my-1 payment-methods">
+                <a href=""><img src="img/footer/8.png" /></a>
+              </div>
+            </div>
+            <div class="form-row align-items-center">
+              <div class="col-sm-3 my-1 payment-methods">
+                <a href=""><img src="img/footer/Vat.png" /></a>
+              </div>
+              <div class="col-sm-9 my-1 payment-method">
+                <p>رقم السجل التجاري:106632011</p>
+                <p>الرقم الضريبي:302264656003</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 quick-links">
+            <h3>شاورني</h3>
+            <p><a href="#">عن شاورني</a></p>
+            <p><a href="#">المدونة</a></p>
+            <p><a href="#">انشاء حساب</a></p>
+            <p><a href="#">تواصل معنا</a></p>
+          </div>
+          <div class="col-md-2 quick-links">
+            <h3>روابط مهمة</h3>
+            <p><a href="#">الشروط والأحكام</a></p>
+            <p><a href="#">الأسئلة الشائعة</a></p>
+            <p><a href="#">المدونة</a></p>
+            <p><a href="#">انشاء حساب</a></p>
+          </div>
+          <div class="col-md-2 quick-links">
+            <h3>أقسام شاورني</h3>
+            <p><a href="#">تسجيل دخول</a></p>
+            <p><a href="#">الصفحة الرئيسية</a></p>
+            <p><a href="#">البحث</a></p>
+            <p><a href="#">طلب مساعدة</a></p>
+          </div>
+          <p class="footer-2">جميع الحقوق محفوظة لدى شاورني © 2022</p>
+        </div>
+      </div>
+    </section>
+    <!-- End footer -->
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+/* global */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+}
+a {
+  text-decoration: none !important;
+}
+a,
+p {
+  font-size: 16px;
+}
+/* Start Register */
+.Register {
+  margin: 100px 0;
+}
+.Register .card {
+  border-radius: 20px;
+}
+.Register .card .card-body {
+  padding: 30px;
+}
+.Register .card .card-body .btn-outline-primary {
+  border-radius: 50px;
+  padding: 10px;
+  color: #0030a9;
+  border: 1px solid #0030a9;
+  font-weight: 700;
+}
+.Register .card .card-body .btn-outline-primary:hover {
+  background-color: #0030a9;
+  color: #fff;
+}
+.Register .card .card-body h4 img {
+  width: 28%;
+}
+.Register .card .card-body form .col-sm-12 {
+  padding: 0;
+}
+.Register .card .card-body form .form-control {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 12px 5px;
+  background-color: #f2f5f8;
+  border: 0;
+}
+.Register .card .card-body form .input-group-text {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #f2f5f8;
+  border: 0;
+}
+.Register .card .card-body .btn-primary {
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: 700;
+}
+.Register .card .card-body .btn-primary:hover {
+  background-color: #0030a9;
+  color: #fff;
+}
+.Register .card .card-body form a {
+  color: #777;
+}
+.Register .card .card-body form a:hover {
+  color: #0030a9;
+}
+.Register .card .card-body h4 a {
+  color: black;
+  font-size: 20px;
+}
+.Register .card .card-body h4 a:hover {
+  color: #0030a9;
+}
+a:hover {
+  color: #0030a9;
+}
+.google {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 57px;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+.google svg {
+  font-size: 32px;
+  color: #262626;
+}
+.google:hover {
+  background-color: #0030a9;
+}
+.google:hover svg {
+  color: #fff;
+}
+.apple {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50px;
+}
+.apple svg {
+  font-size: 32px;
+  color: #262626;
+}
+.apple:hover {
+  background-color: #0030a9;
+}
+.apple:hover svg {
+  color: #fff;
+}
+.btn.focus,
+.btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+.btn.hover,
+.btn:hover {
+  box-shadow: none;
+  outline: none;
+}
+.btn.visited,
+.btn:visited {
+  box-shadow: none;
+  outline: none;
+}
+input.focus,
+input:focus {
+  box-shadow: none;
+  outline: none;
+}
+input.hover,
+input:hover {
+  box-shadow: none;
+  outline: none;
+}
+input.visited,
+input:visited {
+  box-shadow: none;
+  outline: none;
+}
+/* End Register */
